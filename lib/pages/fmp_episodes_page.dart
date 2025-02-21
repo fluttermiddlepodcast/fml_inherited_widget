@@ -39,10 +39,7 @@ class _FMPEpisodesPageState extends State<FMPEpisodesPage> {
                   itemBuilder: (_, index) {
                     final episode = episodes[index];
                     return ListTile(
-                      selectedColor:
-                          episode == playingEpisodeState.playingEpisode
-                              ? Colors.blue.shade300
-                              : null,
+                      selectedColor: episode == playingEpisodeState.playingEpisode ? Colors.blue.shade300 : null,
                       selected: episode == playingEpisodeState.playingEpisode,
                       title: Text(episode.title),
                       subtitle: Text(episode.shortDescription),

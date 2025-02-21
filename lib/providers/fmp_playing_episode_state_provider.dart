@@ -3,8 +3,7 @@ import 'package:fml_inherited_widget/states/fmp_playing_episode_state.dart';
 
 class FMPPlayingEpisodeStateProvider extends InheritedWidget {
   static FMPPlayingEpisodeState of(BuildContext context) {
-    final result = context
-        .dependOnInheritedWidgetOfExactType<FMPPlayingEpisodeStateProvider>();
+    final result = context.dependOnInheritedWidgetOfExactType<FMPPlayingEpisodeStateProvider>();
     assert(
       result != null,
       'No FMPPlayingEpisodeStateProvider found in context',
