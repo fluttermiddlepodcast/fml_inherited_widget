@@ -3,8 +3,7 @@ import 'package:fml_inherited_widget/repository/fmp_episodes_repository.dart';
 
 class FMPEpisodesRepositoryProvider extends InheritedWidget {
   static FMPEpisodesRepository of(BuildContext context) {
-    final result = context
-        .dependOnInheritedWidgetOfExactType<FMPEpisodesRepositoryProvider>();
+    final result = context.dependOnInheritedWidgetOfExactType<FMPEpisodesRepositoryProvider>();
     assert(
       result != null,
       'No FMPEpisodesRepositoryProvider found in context',

@@ -22,9 +22,5 @@ class FMPEpisode {
           url == other.url;
 
   @override
-  int get hashCode =>
-      title.hashCode ^
-      shortDescription.hashCode ^
-      logoUrl.hashCode ^
-      url.hashCode;
+  int get hashCode => title.hashCode ^ shortDescription.hashCode ^ logoUrl.hashCode ^ url.hashCode;
 }
